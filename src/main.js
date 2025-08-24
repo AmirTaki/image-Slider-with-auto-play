@@ -7,7 +7,6 @@ const next = document.querySelector("#next");
 let active = 0
 let lengthItems = items.length ;
 
-console.log(lengthItems)
 
 const reloadSlider = () => {
     let checkLeft = items[active].offsetLeft;
@@ -21,5 +20,10 @@ const reloadSlider = () => {
 next.addEventListener("click", (e) => {
     
     active + 1 > lengthItems - 1 ? active = 0 : active++;
+    reloadSlider();
+})
+
+prev.addEventListener("click", (e) => {
+    active - 1 < 0 ? active = lengthItems - 1  : active --;
     reloadSlider();
 })
