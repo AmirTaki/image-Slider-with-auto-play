@@ -7,6 +7,10 @@ const next = document.querySelector("#next");
 let active = 0
 let lengthItems = items.length ;
 
+let refreshSlider = setInterval(()=> {
+    active + 1 > lengthItems - 1 ? active = 0 : active++;
+    reloadSlider();
+}, 300)
 
 const reloadSlider = () => {
     let checkLeft = items[active].offsetLeft;
