@@ -7,6 +7,11 @@ const next = document.querySelector("#next");
 let active = 0
 
 
+
+const reloadSlider = () => {
+    let checkLeft = items[active].offsetLeft;
+}
+
 next.addEventListener("click", (e) => {
     active++;
     reloadSlider();
