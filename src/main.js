@@ -10,6 +10,7 @@ let active = 0
 
 const reloadSlider = () => {
     let checkLeft = items[active].offsetLeft;
+    list.style.left = -checkLeft + 'px';
 }
 
 next.addEventListener("click", (e) => {
