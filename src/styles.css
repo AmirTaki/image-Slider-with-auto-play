@@ -16,6 +16,7 @@ body {
     height: 100%;
     display: flex; 
     width: max-content;  
+    transition: 1s;
 }
 .list img {
     width: 1300px;

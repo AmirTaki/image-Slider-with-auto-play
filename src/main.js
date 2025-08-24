@@ -16,6 +16,6 @@ const reloadSlider = () => {
 
 next.addEventListener("click", (e) => {
     
-    active + 1 > lengthItems - 1 ? active = 0 : active++
+    active + 1 > lengthItems - 1 ? active = 0 : active++;
     reloadSlider();
 })
