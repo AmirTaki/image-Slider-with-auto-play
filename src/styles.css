@@ -54,3 +54,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    margin: 20px;
+    border-radius: 20px;
+}
