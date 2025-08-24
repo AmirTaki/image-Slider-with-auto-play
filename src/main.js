@@ -10,7 +10,7 @@ let lengthItems = items.length ;
 let refreshSlider = setInterval(()=> {
     active + 1 > lengthItems - 1 ? active = 0 : active++;
     reloadSlider();
-}, 300)
+}, 3000)
 
 const reloadSlider = () => {
     let checkLeft = items[active].offsetLeft;
@@ -18,11 +18,11 @@ const reloadSlider = () => {
 
     let lastActiveDot = document.querySelector(".slider .dots li.active");
     lastActiveDot.classList.remove('active');
-    dots[active].classList.add('active')
+    dots[active].classList.add('active');
+    clearInterval(refreshSlider)
 }
 
 next.addEventListener("click", (e) => {
-    
     active + 1 > lengthItems - 1 ? active = 0 : active++;
     reloadSlider();
 })
