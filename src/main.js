@@ -14,7 +14,8 @@ const reloadSlider = () => {
     list.style.left = -checkLeft + 'px';
 
     let lastActiveDot = document.querySelector(".slider .dots li.active");
-    lastActiveDot.classList.remove('active')
+    lastActiveDot.classList.remove('active');
+    dots[active].classList.add('active')
 }
 
 next.addEventListener("click", (e) => {

@@ -64,6 +64,7 @@ body {
     background-color: #FFF;
     margin: 20px;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .dots li.active {
