@@ -27,3 +27,8 @@ prev.addEventListener("click", (e) => {
     active - 1 < 0 ? active = lengthItems - 1  : active --;
     reloadSlider();
 })
+
+
+dots.forEach((li, key) => {
+    
+})
