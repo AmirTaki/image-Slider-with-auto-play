@@ -30,5 +30,8 @@ prev.addEventListener("click", (e) => {
 
 
 dots.forEach((li, key) => {
-    
+    li.addEventListener("click", (e) => {
+        active = key;
+        reloadSlider()
+    })
 })
